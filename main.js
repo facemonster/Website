@@ -65,8 +65,8 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const baseUrl = window.location.hostname === 'localhost' ? '' : '/public';
-const jeffTexture = new THREE.TextureLoader().load(`${baseUrl}/jeff.png`);
+const jeffTexture = new THREE.TextureLoader().load('./jeff.png');
+
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
